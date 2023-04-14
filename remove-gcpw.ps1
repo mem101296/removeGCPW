@@ -7,15 +7,15 @@ if (Test-Path -Path $directory -IsValid){
 
     #Install−PackageProvider −Name Nuget −Force
     echo "GCPWD Removed"
-    Install-Module -Name AzureAD -Force
-    Import-Module -Name AzureAD -Force
-    Connect-AzureAD
+    #Install-Module -Name AzureAD -Force #commenting out, does not currently work for Azure AAD enrollment
+    #Import-Module -Name AzureAD -Force
+    #Connect-AzureAD
 
 }else{
 
     echo "`nNo GCPW"
-    Install-Module -Name AzureAD -Force
-    Import-Module -Name AzureAD -Force
-    Connect-AzureAD
+    #Install-Module -Name AzureAD -Force #commenting out, does not currently work for Azure AAD enrollment
+    #Import-Module -Name AzureAD -Force
+    #Connect-AzureAD
 
 }
